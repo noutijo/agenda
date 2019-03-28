@@ -24,6 +24,7 @@ public class Launch extends Application {
         AnchorPane pan = FXMLLoader.load(getClass().getResource("/cm/minhdu/fxml/login.fxml"));
 
         stage.initStyle(StageStyle.UNDECORATED);
+        //stage.initStyle(StageStyle.UNDECORATED);
         stage.initStyle(StageStyle.TRANSPARENT);
          stage.setTitle("Connexion");
         Scene scene = new Scene(pan);
