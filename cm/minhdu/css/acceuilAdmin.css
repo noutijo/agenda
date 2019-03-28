@@ -1,0 +1,45 @@
+.rien{
+    -fx-background-image: url('../images/backs.png');
+}
+.statHeader{
+    -fx-background-color:white;
+    -fx-background-radius :10px;
+    -fx-border-radius :10px;
+    -fx-border-color:#f1f1f1;
+}
+.fonctionnalites_01,.fonctionnalites_02,.fonctionnalites_03,.fonctionnalites_04{
+    -fx-background-color:white;
+    -fx-background-radius :10px;
+    -fx-border-radius :10px;
+    -fx-border-color:#f1f1f1;
+}
+.fonctionnalites_01:hover{
+    -fx-border-color:rgb(42,137,223,0.2);
+}
+.fonctionnalites_02:hover{
+    -fx-border-color:rgb(34,50,68,0.2);
+}
+.fonctionnalites_03:hover{
+    -fx-border-color:rgb(236,198,107,0.2);
+}
+.fonctionnalites_04:hover{
+    -fx-border-color:rgb(0,179,156,0.2);
+}
+.subText{
+    -fx-fill:#838383;
+}
+.close:hover{
+	-fx-background-color: #f1f1f1;
+}
+.deconnexion{
+    -fx-background-color:white;
+    -fx-background-radius :100px;
+    -fx-border-radius :100px;
+    -fx-border-color:#f1f1f1;
+}
+.deconnexion:hover{
+    -fx-background-color:#f1f1f1;
+    -fx-background-radius :100px;
+    -fx-border-radius :100px;
+    -fx-border-color:rgb(0,179,156,0.2);
+}

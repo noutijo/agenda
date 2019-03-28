@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyPressed="#seConnecterKeyPressed" prefHeight="642.0" prefWidth="601.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cm.minhdu.controlleurs.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="500.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+         <children>
+            <AnchorPane prefHeight="250.0" prefWidth="790.0" style="-fx-background-color: #00aacf;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text fill="WHITE" layoutX="234.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E- Agenda">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER" layoutX="554.0" layoutY="15.0" onMouseClicked="#closeCliquer" styleClass="close" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView id="imageClose" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="40.0" layoutY="52.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Month%20View_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="40.0" layoutY="201.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Planner_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="184.0" layoutY="128.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Planner_64px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="473.0" layoutY="98.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Schedule_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="433.0" layoutY="161.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Schedule_64px.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutY="-2.0" onMouseDragged="#bareDragged" onMousePressed="#barePressed" onMouseReleased="#bareReleased" prefHeight="171.0" prefWidth="549.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="76.0" layoutY="180.0" prefHeight="345.0" prefWidth="452.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <effect>
+                  <DropShadow color="#9e9e9e" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="65.0" layoutY="190.0" prefHeight="367.0" prefWidth="469.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <effect>
+                  <DropShadow color="#9e9e9e" />
+               </effect>
+               <children>
+                  <Pane layoutY="41.0" prefHeight="40.0" prefWidth="5.0" style="-fx-background-color: #00894c;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="41.0" />
+                  <Text fill="#00894c" layoutX="47.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="CENTER_LEFT" layoutX="104.0" layoutY="150.0" prefHeight="80.0" prefWidth="307.0" spacing="40.0">
+                     <children>
+                        <JFXTextField fx:id="identifiant" focusColor="#00894c" labelFloat="true" prefHeight="25.0" prefWidth="252.0" promptText="Entrez votre identifiant">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font></JFXTextField>
+                        <JFXPasswordField fx:id="password" focusColor="#00894c" labelFloat="true" promptText="Entrez votre mot de passe">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXPasswordField>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="id_connecter" buttonType="RAISED" layoutX="291.0" layoutY="286.0" onKeyPressed="#seConnecterKeyPressed" onMouseClicked="#seConnecterCliquer" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #00aacf; -fx-background-radius: 100px;" text="Se connecter" textFill="WHITE" AnchorPane.bottomAnchor="51.0" AnchorPane.rightAnchor="58.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Circle fx:id="circleLogo" fill="WHITE" layoutX="235.0" layoutY="61.0" radius="44.0" stroke="#f2eeee" strokeDashOffset="5.0" strokeMiterLimit="20.0" strokeType="INSIDE">
+                     <effect>
+                        <DropShadow color="#f7f7f7" />
+                     </effect>
+                  </Circle>
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="104.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="112.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../gifs/load.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <HBox fx:id="panSnackBar" alignment="CENTER" layoutX="65.0" layoutY="588.0" prefHeight="6.0" prefWidth="469.0" />
+            <Separator layoutX="174.0" layoutY="606.0" opacity="0.6" prefHeight="1.0" prefWidth="200.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+         <effect>
+            <DropShadow color="#949494" />
+         </effect>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/login.css" />
+      <URL value="@../css/snackBarStyle.css" />
+   </stylesheets>
+</AnchorPane>

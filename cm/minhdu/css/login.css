@@ -1,0 +1,10 @@
+.images{
+	-fx-background-image: url('../images/cmr_01.jpg');
+	-fx-background-size: cover;
+}
+.close:hover{
+	-fx-background-color: #C92E1E;
+}
+#imageClose{
+    -fx-image:url('../icons/DeleteWhite.png');
+}
