@@ -43,3 +43,7 @@
     -fx-border-radius :100px;
     -fx-border-color:rgb(0,179,156,0.2);
 }
+.root{
+-fx-background-color:white;
+
+}
