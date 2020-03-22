@@ -1,5 +1,5 @@
 # agenda
->Agenda collectif pour une entreprise
+>Collective agenda for a company
 
- Cette application permet d'organiser les réunions ,les missions et autres en temps que chef d'un section dans une entreprise.
- Une fois ayant programmer ses derniers,il suffit que vos collaborateurs se connecter pour les consultés.
+ This application allows you to organize meetings, missions and others as head of a section in a company.
+ Once having programmed its last, it is enough that your collaborators connect for the consulted.
